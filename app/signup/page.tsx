@@ -1,9 +1,9 @@
 import AcmeLogo from '@/app/ui/acme-logo';
-import LoginForm from '@/app/ui/login-form';
-import Link from 'next/link';
+import SignupForm from '@/app/ui/signup-form';
 import { lusitana } from '@/app/ui/fonts';
+import Link from 'next/link';
 
-export default function LoginPage() {
+export default function SignupPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
       <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32">
@@ -12,11 +12,11 @@ export default function LoginPage() {
             <AcmeLogo />
           </div>
         </div>
-        <LoginForm />
+        <SignupForm />
         <p className={`${lusitana.className} text-s mx-auto mb-3`}>
-          New to Logbuk?{' '}
-          <Link href="/signup" className="text-blue-500 ">
-            Join now
+          Already have an account?{' '}
+          <Link href="/login" className="text-blue-500 ">
+            Login
           </Link>
         </p>
       </div>
